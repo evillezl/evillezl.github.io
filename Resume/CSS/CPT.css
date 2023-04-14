@@ -1,0 +1,232 @@
+@charset "UTF-8";
+html {
+    box-sizing: border-box; 
+  } 
+  * {
+    box-sizing: initial; 
+  } 
+
+/*headlines*/
+h1{
+    font-weight: 700;
+}
+h2 {
+    color:#8C696F;
+    font-size: x-large;
+    font-weight: 500;
+}
+h3 {
+    color: #8C696F;
+    font-size: large;
+    font-weight: 500;
+}
+h4 {
+    color: #9F7F84;
+    font-size: medium;
+    font-weight: 500;
+}
+body {
+    text-align: left;
+    background: fixed url(../images/abstract-art-6994322.png) center repeat; 
+    margin: 0;
+    color: #9F7F84;
+    font-size: medium;
+    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
+}
+p {
+    font-size: 1em;
+    font-family: 'Ubuntu', sans-serif;
+    margin: .5em;
+    color: #9F7F84;
+    font-size: medium;
+}
+/*grid*/
+#BTHP {
+    margin: .5em 1em;
+    width: 400px;
+}
+#BTHP a{
+    border: 1px solid;
+    border-radius: .5em;
+    padding: .5em 1em;
+    margin: .5em;
+    display: block;
+}
+/*header*/
+header {
+    background: url(../images/Personal_img/IMG_5939.png) center repeat;
+    background-size: cover; 
+    text-align: center;
+    height: auto;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom: 3px #76BED0 solid;
+    clear: both;
+  }
+
+header h1 {
+    font-size: 3em;
+    font-family: 'Ubuntu', sans-serif;
+    color: seashell;
+    text-align: center;
+}
+header p{
+    justify-content: center;
+    text-align: center;
+    color: seashell;
+}
+
+/*nav*/
+nav, footer {
+    font-family: 'Ubuntu', sans-serif;
+    background-color:rgba(188,226,158,1); 
+    background-size: cover;
+  }
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    font-size: .8em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+  }
+  nav ul li a {
+    display: block;
+    border: 1px solid;
+    border-radius: .5em;
+    padding: .5em 1em;
+    margin: .5em;
+  } 
+
+/*footer*/
+footer {
+    font-size: small;
+    font-family: 'Ubuntu', sans-serif;
+    border-top: 3px #76BED0 solid;
+    text-align: center;
+    background-color:rgba(188,226,158,1); 
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-size: cover;
+    clear: both;
+}
+footer img {
+    width: 60px;
+    height: 60px;
+    border-radius: 30%;
+} 
+hr {
+    color: #FF8787;
+    border: double;
+}
+/*links*/
+a:link {
+    color: #1E3888;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #476BD7;
+}
+
+a:hover {
+    color: #2545A7;
+    background-color: #FDF0EC;
+}
+  
+a:active {
+    color: #284CB8;
+    background-color: #FDF0EC;
+} 
+/*articles*/
+article {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: rgb(229, 235, 178);
+    color: #555;
+    padding: 1em;
+    border: double 4px #76BED0;
+    border-radius: 1em 2em;
+    margin: .5em;
+    height: auto;
+    text-align: left;
+    justify-content: center;
+    float: inherit;
+    clear: left;
+}
+/*images*/
+img[alt*="englishlanguage"]{
+    border-radius: .5em;
+}
+img[alt*="spanishlanguage"]{
+    border-radius: .5em;
+}
+/*media*/
+@media screen and (min-width: 480px) {
+   
+    h2 {
+        color:#8C696F;
+        font-size: x-large;
+    }
+    h3 {
+        color: #8C696F;
+        font-size: larger;
+    }
+    header h1 {
+        font-size: xx-large;
+    }
+    nav ul li a {
+        flex: auto;
+      } 
+  }
+@media screen and (min-width: 600px) {
+    header p {
+      margin-top: 1em;
+      font-family: Georgia, serif;
+      font-style: italic;
+      font-size: 1.2em;
+    }
+    h2, h3 {
+        font-family: 'Ubuntu', sans-serif;
+    }
+    h2, h3 {
+      font-weight: bold;
+    }
+  }
+  
+  @media screen and (min-width: 940px) {
+    #grid {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: minmax(25em, 1fr) 30em;
+        grid-template-areas:
+        "nav nav"
+        "article aside"
+         "footer footer";
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+    }
+    header {
+        grid-area: nav; 
+      }
+      #EES {
+        grid-area: article;
+      }
+      #skills {
+      grid-area: aside;
+      padding: 1em;
+      padding-left: 45px;
+    }
+    footer {
+        grid-area: footer;
+      } 
+      img[alt*="BacktoNav"]{ 	
+        position: fixed;
+        bottom: 5%;
+        right: 5%;
+    }
