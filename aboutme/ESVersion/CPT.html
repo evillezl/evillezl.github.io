@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Elsy's Website 
+        </title>
+        <style>
+               @import url(../../CSS/CPT.css);
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
+            #grid {
+                display: grid;
+                grid-template-rows: auto;
+                grid-template-columns: auto;
+                grid-template-areas:
+                "nav"
+                "article" 
+                "footer"; 
+            }
+            header {
+                grid-area: nav; 
+            }
+            #article {
+                grid-area: article;
+            }
+            footer {
+                grid-area: footer;
+            } 
+            @media screen and (min-width: 940px) {
+            #grid {
+                display: grid;
+                grid-template-rows: auto;
+                grid-template-columns: auto;
+                grid-template-areas:
+                "nav"
+                "article" 
+                "footer"; 
+            }
+            header {
+                grid-area: nav; 
+            }
+            #article {
+                grid-area: article;
+            }
+            footer {
+                grid-area: footer;
+            } 
+            img[alt*="BacktoNav"]{ 	
+                position: fixed;
+                bottom: 5%;
+                right: 5%;
+            }
+            }
+        </style>
+    </head>
+<body>
+    <div id="grid">
+<header>
+    <nav>
+        <ul id="nav">
+            <li><b><a href="../../ES/ElsysPortfolioES.html">Sobre mí</a></b></li>
+            <li><b><a href="../../ES/education.html">Educación</a></b></li>
+            <li><b><a href="../../ES/experience.html">Experiencia</a></b></li>
+            <li><b><a href="../../ES/experience.html">Experiencia de Servicio</a></b></li>
+            <li><b><a href="../../ES/skills.html">Habilidades</a></b></li>
+        </ul>
+    </nav>
+
+    <h1>Sitio Web de Elsy</h1>
+        <p class="more">¡Puedes aprender más sobre mí en Inglés!</p>
+            <p><a href="../ENVersion/CPT.html"><img src="../../images/Flags_img/Flag_of_the_United_Kingdom_(1-2).svg.png" alt="englishlanguage" width="30" height="30"></a>
+            <a href="CPT.html"><img src="../../images/Flags_img/Bandera_de_España.svg.png" alt="spanishlanguage" width="30" height="30"></a>
+</header>
+
+<article>
+
+<h2>Si necesita ayuda para comenzar su acondicionamiento físico, ¡puedo ayudarlo!</h2>
+
+<form action="" method="POST"> 
+
+<h2>Su información:</h2>
+<ul>
+  <li>Nombre: <input type="text" name="customername"> </li>
+  <li>Numéro de téléphone:<input type="text" name="customerstelephonenumer"></li>
+  <li>Correo electrónico:<input type="text" name="customersemail"></li>
+</ul>
+
+
+<h2>Cuestionario:</h2>
+<ul>
+  <li>¿A qué te dedica?<br><textarea name="instructions" rows="4" cols="60" maxlength="400" placeholder="No more than 400 characters long"></textarea></li>
+  <li>¿Cuáles son sus objetivos a largo plazo?<br><textarea name="instructions" rows="4" cols="60" maxlength="400" placeholder="No more than 400 characters long"></textarea></li>
+  <li>¿Cuáles son sus objetivos a corto plazo?<br><textarea name="instructions" rows="4" cols="60" maxlength="400" placeholder="No more than 400 characters long"></textarea></li>
+  <li>¿Cómo es su dieta diaria?<br><textarea name="instructions" rows="4" cols="60" maxlength="400" placeholder="No more than 400 characters long"></textarea></li>
+  <li>¿Tiene alguna afección médica?<br><textarea name="instructions" rows="4" cols="60" maxlength="400" placeholder="No more than 400 characters long"></textarea></li>
+
+<ul>
+  <li>¿Cuánto tiempo duerme al día?
+      <select name="number" size="1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+      </select></li>
+</ul>
+
+<h2>Experiencia anterior<em>(Elige tantas como quieras)</em>:</h2>
+<ul>
+  <li><input type="checkbox" name="TypesofExercises" value="Running">Corriendo</li>
+  <li><input type="checkbox" name="TypesofExercises" value="Cycling">Ciclismo</li>
+  <li><input type="checkbox" name="TypesofExercises" value="Rowing">Remar</li>
+  <li><input type="checkbox" name="TypesofExercises" value="Boxing">Boxeo</li>
+  <li><input type="checkbox" name="TypesofExercises" value="HITT">Entrenamiento de intervalos de alta intensidad</li>
+  <li><input type="checkbox" name="TypesofExercises" value="Pilates">Pilate</li>
+  <li><input type="checkbox" name="TypesofExercises" value="Dance">Dansa</li>
+  <li><input type="checkbox" name="TypesofExercises" value="Yoga">Yoga</li>
+  <li><input type="checkbox" name="TypesofExercises" value="Lifting">Entrenamiento de fuerza</li>
+</ul>
+
+<div id="submit">
+  <p><input type="submit" value="Submit"><input type="reset"></p>
+</div>
+</form>
+<div id="BTHP">
+    <p><b><a href="Freelance.html">La pantalla de inicio</a></b></p>
+</div>
+</article>
+
+<a href="#nav"><img src="../../images/icons_img/arrow_upward.png" alt="BacktoNav"></a>
+<footer>
+  <p>Póngase en Contacto Conmigo</p>
+  <p>
+    <a href="mailto:evillezcasl.ii@gmail.com"><img src="../../images/icons_img/mail-2048128_1920.png" alt="email"></a>
+    <a href="https://www.linkedin.com/in/evillezl/"><img src="../../images/icons_img/linkedin-2048132_1920.png" alt="linkedin"></a>
+    <a href="https://www.instagram.com/elmavile6/"><img src="../../images/icons_img/instagram-2048131_1920.png" alt="instagram"></a>
+    <a href="https://www.pinterest.com/"><img src="../../images/icons_img/pinterest-2048134_1920.png" alt="instagram"></a>
+ </p>
+  <small>© Todos los derechos de autor del contenido 2023, Elsy Villezcas</small>
+</footer>
+</body>
+</html>
+

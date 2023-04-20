@@ -50,7 +50,7 @@ header {
     height: auto;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    border-bottom: 3px #76BED0 solid;
+    border-bottom: 3px #FF8787 solid;
     clear: both;
   }
 
@@ -92,30 +92,129 @@ nav ul {
     margin: .5em;
   } 
 
+/*footer*/
+footer {
+  font-size: small;
+  font-family: 'Ubuntu', sans-serif;
+  border-top: 3px #FF8787 solid;
+  text-align: center;
+  background-color:rgba(188,226,158,1); 
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  background-size: cover;
+  clear: both;
+}
+footer img {
+  width: 60px;
+  height: 60px;
+  border-radius: 30%;
+} 
+hr {
+  color: #FF8787;
+  border: double;
+}
+
+/*articles*/
+article {
+  font-family: 'Ubuntu', sans-serif;
+  background-color: white;
+  color: #555;
+  padding: 1em;
+  border: double 4px #FF8787;
+  border-radius: 1em 2em;
+  margin: .5em 0em;
+  height: auto;
+  text-align: left;
+  justify-content: center;
+  float: inherit;
+  clear: left;
+}
+#instagram{
+  margin-left: .5em;
+
+}
+
 /*article education*/
 article h2 img {
     float: left;
     margin: 0 1em 1em 0;
     transform: rotate(350deg)
 }
-article section{
+#table{
     clear: both;
 }
+
 
 /*article about me*/
 article p img {
     float: left;
-    margin: 0 1em 1em 0;
+    margin: 1em;
     border-radius: 50%;
     -webkit-shape-outside: circle(130px);
       /*shape-outside: circle(175px);*/
 }
-#education{
-    clear: both;
+#about {
+  margin: 1em ;
+  width: auto;
+  clear: both;
 }
 
+/*article skills*/
+#grid2 {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 50%;
+  grid-template-areas:
+  "skills1 skills2"
+  ; 
+}
+#skills1 {
+  grid-area: skills1; 
+}
+#skills2 {
+  grid-area: skills2;
+}
+
+/*links*/
+a:link {
+  color: #1E3888;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #476BD7;
+}
+
+a:hover {
+  color: #2545A7;
+  background-color: #FDF0EC;
+}
+
+a:active {
+  color: #284CB8;
+  background-color: #FDF0EC;
+} 
+
+/*musc*/
+p.more {
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase; 
+  font-size: .8em;
+  clear: left;
+}
+
+/*tables*/
+td, th { 
+  border: 1px solid #F8C4B4; 
+}
+table { 
+  border: 1px solid #FF8787; 
+  margin: 1em;
+}
+
+
 /*postioned img*/
-img[src*="images/icons/ADVCERT.png"]{
+img[src*="../images/icons_img/ADVCERT.png"]{
     -webkit-shape-outside: circle(80px);
     /*shape-outside: circle(80px);*/
 }
@@ -126,140 +225,46 @@ img[alt*="spanishlanguage"]{
     border-radius: .5em;
 }
 img[alt*="BacktoNav"]{
-    border-radius: .5em;
-    float: left;
-    background-color: #555;
-    position: fixed;
-    bottom: 5%;
-    right: 5%;
-} 
-
-/*linksto*/
-#grid {
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: minmax(25em, 1fr) 30em;
-    grid-template-areas:
-    "nav nav"
-    "article aside"
-     "footer footer"; 
-  }
-header {
-  grid-area: nav; 
-}
-#EES {
-  grid-area: article;
-}
-#skills {
-    grid-area: aside;
-  }
-footer {
-  grid-area: footer;
-} 
-
-/*articles*/
-article {
-    font-family: 'Ubuntu', sans-serif;
-    background-color: rgb(229, 235, 178);
-    color: #555;
-    padding: 1em;
-    border: double 4px #76BED0;
-    border-radius: 1em 2em;
-    margin: .5em;
-    height: auto;
-    text-align: left;
-    justify-content: center;
-    float: inherit;
-    clear: left;
-}
-#skills {
-    background-color: #76BED0;
-    border: 4px rgb(229, 235, 178) double;
-}
-
-/*tables*/
-    td, th { 
-        border: 1px solid #F8C4B4; 
-    }
-    table { 
-        border: 1px solid #FF8787; 
-        margin: 1em;
-    }
-
-/*links*/
-a:link {
-    color: #1E3888;
-    text-decoration: none;
-}
-
-a:visited {
-    color: #476BD7;
-}
-
-a:hover {
-    color: #2545A7;
-    background-color: #FDF0EC;
-}
-  
-a:active {
-    color: #284CB8;
-    background-color: #FDF0EC;
-} 
-
-/*musc*/
-p.more {
-    font-family: 'Ubuntu', sans-serif;
-    text-transform: uppercase; 
-    font-size: .8em;
-    clear: left;
-}
-#about {
-    margin: 1em ;
-    width: auto;
-    float: left;
-}
-
-/*footer*/
-footer {
-    font-size: small;
-    font-family: 'Ubuntu', sans-serif;
-    border-top: 3px #76BED0 solid;
-    text-align: center;
-    background-color:rgba(188,226,158,1); 
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    background-size: cover;
-    clear: both;
-}
-footer img {
-    width: 60px;
-    height: 60px;
-    border-radius: 30%;
-} 
-hr {
-    color: #FF8787;
-    border: double;
+  border-radius: .5em;
+  float: left;
+  background-color: #476BD7;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
 }
 
 /*media*/
 @media screen and (min-width: 480px) {
-   
-    article p img  {
+    article p img {
+    float: left;
+    margin: 1em;
+    border-radius: 50%;
       margin-left: 5px;
-      -webkit-shape-outside: url(../images/Personal_img/IMG_7848.jpg);  
-      /*shape-outside: url(../images/Personal_img/IMG_7848.jpg);*/ 
+      -webkit-shape-outside: url(../images/Personal_img/IMG_5939.png);
+      -webkit-shape-margin: 1em;
+      /*shape-margin: 1em;*/ 
+    }
+    img[src*="images/icons/ADVCERT.png"] {  
       -webkit-shape-margin: 1em; 
       /*shape-margin: 1em;*/
     }
-    img[src*="images/icons/ADVCERT.png"] {
-      -webkit-shape-outside: url(../images/icons_img/ADVCERT.png);  
-      /*shape-outside: url(../images/icons_img/ADVCERT.png);*/    
-      -webkit-shape-margin: 1em; 
-      /*shape-margin: 1em;*/
-    }
+    h2 {
+      color:#8C696F;
+      font-size: x-large;
+  }
+  h3 {
+      color: #8C696F;
+      font-size: larger;
+  }
+  header h1 {
+      font-size: xx-large;
+  }
+  nav ul li a {
+      flex: auto;
+    } 
   }
   
-  @media screen and (min-width: 600px) {
+  @media screen and (max-width: 600px) {
     header p {
       margin-top: 1em;
       font-family: Georgia, serif;
@@ -273,40 +278,6 @@ hr {
       font-weight: bold;
     }
   }
-  
-  @media screen and (min-width: 940px) {
-    #grid {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: minmax(25em, 1fr) 30em;
-        grid-template-areas:
-        "nav nav"
-        "article aside"
-         "footer footer";
-      max-width: 1200px;
-      margin: 0 auto;
-      position: relative;
-    }
-    header {
-        grid-area: nav; 
-      }
-      #EES {
-        grid-area: article;
-      }
-      #skills {
-      grid-area: aside;
-      padding: 1em;
-      padding-left: 45px;
-    }
-    footer {
-        grid-area: footer;
-      } 
-      img[alt*="BacktoNav"]{ 	
-        position: fixed;
-        bottom: 5%;
-        right: 5%;
-    }
-}
   
 
 

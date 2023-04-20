@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Elsy's Website 
+        </title>
+        <style>
+            @import url(../CSS/Resume.css);
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
+            #grid {
+                display: grid;
+                grid-template-rows: auto;
+                grid-template-columns: auto;
+                grid-template-areas:
+                "nav"
+                "article" 
+                "footer"; 
+            }
+            header {
+                grid-area: nav; 
+            }
+            #article {
+                grid-area: article;
+            }
+            footer {
+                grid-area: footer;
+            } 
+            @media screen and (min-width: 940px) {
+            #grid {
+                display: grid;
+                grid-template-rows: auto;
+                grid-template-columns: auto;
+                grid-template-areas:
+                "nav"
+                "article" 
+                "footer"; 
+            }
+            header {
+                grid-area: nav; 
+            }
+            #article {
+                grid-area: article;
+            }
+            footer {
+                grid-area: footer;
+            } 
+            img[alt*="BacktoNav"]{ 	
+                position: fixed;
+                bottom: 5%;
+                right: 5%;
+            }
+            }
+        </style>
+    </head>
+<body>
+    <div id="grid">
+    <header>
+        <nav>
+        <ul id="nav">
+            <li><b><a href="../index.html">About me</a></b></li>
+            <li><b><a href="education.html">Education</a></b></li>
+            <li><b><a href="#experience">Experience</a></b></li>
+            <li><b><a href="service.html">Service & Leadership Experience</a></b></li>
+            <li><b><a href="skills.html">Skills</a></b></li>
+        </ul>
+        </nav>
+
+    <h1>Elsy's Website</h1>
+    <p class="more">You can learn more about me in Spanish!</p>
+    <p><a href="experience.html"><img src="../images/Flags_img/Flag_of_the_United_Kingdom_(1-2).svg.png" alt="englishlanguage" width="30" height="30"></a>
+        <a href="../ES/experience.html"><img src="../images/Flags_img/Bandera_de_España.svg.png" alt="spanishlanguage" width="30" height="30"></a>
+    </header>
+
+<article id="article">
+
+    <h2 id="experience">Experience</h2>
+    <hr>
+
+    <section id="Eventcoordinator">
+        <h3>Bilingual Event Coordinator,</h3>
+        <p><i>Nov. 2021 to Present</i></p>
+        <p><b>Weber State Community Education Center</b> | Ogden, UT</p>
+        
+        <ul>
+            <li>Bilingual in Spanish and English.</li>
+            <li>Achieved <em>95%</em> customer satisfaction score based on feedback forms.</li>
+            <li>Successfully handled <em>50+</em> phone calls daily with no complaints during the last 2 years.</li>
+            <li>Greeting/assisting customers with information and registration for programs at the WSU CEC </li>
+            <li>Consulted events in the office scheduling system.</li>
+        </ul>
+
+    </section>
+
+    <section id="YMCAsitecoordinator">
+        <h3>YMCA Site Coordinator,</h3>
+        <p><i>Aug. 2020 to May 2021</i></p>
+        <p><b>YMCA</b> | Ogden, UT</p>
+    
+        <ul>
+            <li>Managed all activities, including Lessons and Field Trips for the After School Program with over  <i>3</i> Team Members.</li>
+        </ul>
+
+        <h4>Key Accomplishments:</h4>
+        <ul>
+            <li>Created a highly effective new YMCA, Taylor Canyon, that significantly impacted efficiency and improved operations by <i>95%</i>.</li>
+            <li>Promoted from YMCA Specialist to YMCA Site Coordinator, <i>in less than 12-months</i> </li>
+            <li>Recognized as Employee of the <i>9</i> months for outstanding performance and team contributions. </li>
+            <li>Created highly effective new clubs that significantly impacted efficiency and improved operation </li>
+        </ul>
+    <p class="more">What it meant to<a href="../experience/ENVersion/YMCA.html"> work at the YMCA!</a></p>
+    </section>
+
+</article>
+     
+<a href="#nav"><img src="../images/icons_img/arrow_upward.png" alt="BacktoNav"></a>
+
+<footer>
+    <p>Contact Me</p>
+    <p>
+        <a href="mailto:evillezcasl.ii@gmail.com"><img src="../images/icons_img/mail-2048128_1920.png" alt="email"></a>
+        <a href="https://www.linkedin.com/in/evillezl/"><img src="../images/icons_img/linkedin-2048132_1920.png" alt="linkedin"></a>
+        <a href="https://www.instagram.com/elmavile6/"><img src="../images/icons_img/instagram-2048131_1920.png" alt="instagram"></a>
+        <a href="https://www.pinterest.com/"><img src="../images/icons_img/pinterest-2048134_1920.png" alt="pinterest"></a>
+    </p>
+        <small>© All content copyright 2023, Elsy Villezcas</small>
+</footer>
+
+</div>
+</body>
+</html>

@@ -61,7 +61,7 @@ header {
     height: auto;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    border-bottom: 3px #76BED0 solid;
+    border-bottom: 3px #FF8787 solid;
     clear: both;
   }
 
@@ -107,7 +107,7 @@ nav ul {
 footer {
     font-size: small;
     font-family: 'Ubuntu', sans-serif;
-    border-top: 3px #76BED0 solid;
+    border-top: 3px #FF8787 solid;
     text-align: center;
     background-color:rgba(188,226,158,1); 
     border-top-left-radius: 25px;
@@ -146,12 +146,12 @@ a:active {
 /*articles*/
 article {
     font-family: 'Ubuntu', sans-serif;
-    background-color: rgb(229, 235, 178);
+    background-color: white;
     color: #555;
     padding: 1em;
-    border: double 4px #76BED0;
+    border: double 4px #FF8787;
     border-radius: 1em 2em;
-    margin: .5em;
+    margin: .5em 0em;
     height: auto;
     text-align: left;
     justify-content: center;
@@ -165,6 +165,19 @@ img[alt*="englishlanguage"]{
 img[alt*="spanishlanguage"]{
     border-radius: .5em;
 }
+img[alt*="BacktoNav"]{
+    border-radius: .5em;
+    float: left;
+    background-color: #476BD7;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+ul {
+    list-style-type: none;
+    margin: .5em;
+    padding: .5em;
+  }
 /*media*/
 @media screen and (min-width: 480px) {
    
@@ -197,36 +210,3 @@ img[alt*="spanishlanguage"]{
       font-weight: bold;
     }
   }
-  
-  @media screen and (min-width: 940px) {
-    #grid {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: minmax(25em, 1fr) 30em;
-        grid-template-areas:
-        "nav nav"
-        "article aside"
-         "footer footer";
-      max-width: 1200px;
-      margin: 0 auto;
-      position: relative;
-    }
-    header {
-        grid-area: nav; 
-      }
-      #EES {
-        grid-area: article;
-      }
-      #skills {
-      grid-area: aside;
-      padding: 1em;
-      padding-left: 45px;
-    }
-    footer {
-        grid-area: footer;
-      } 
-      img[alt*="BacktoNav"]{ 	
-        position: fixed;
-        bottom: 5%;
-        right: 5%;
-    }

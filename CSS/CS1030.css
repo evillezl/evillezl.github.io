@@ -158,65 +158,20 @@ article {
     float: inherit;
     clear: left;
 }
-/*images*/
-img[alt*="englishlanguage"]{
-    border-radius: .5em;
-}
-img[alt*="spanishlanguage"]{
-    border-radius: .5em;
-}
-
-/*musc*/
-.price {
-    font-weight: bold;
-    background:  #FF8787;
-    padding: 5px;
-    width: 100%;
-    border-radius: 1em;
-    text-align: center;
-    margin-top: auto;
-  }
-.photo {
-    order: -1; 
-  }
-#menu {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: stretch;
-    justify-content: flex-start;
-    border-radius: 1em 2em;
-    margin: .5em;
-  }
-
-section.dish {
-    font-family: 'Ubuntu', sans-serif;
+/*section*/
+section {
     background-color: rgba(188,226,158,1);
     color: #555;
     padding: 1em;
     border: double 4px #FF8787;
-    border-radius: 1em 2em;
+    border-radius: 0em 2em 1em;
     margin: .5em;
-    padding: 20px;
-    width: 300px;
-    text-align: left;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    flex: auto; 
+
 }
 
-img[alt*="pt"]{
+/*images*/
+img[alt*="englishlanguage"]{
     border-radius: .5em;
-}
-
-img[alt*="I"]{
-    border-radius: .5em;
-}
-p.more {
-    font-family: 'Ubuntu', sans-serif;
-    text-transform: uppercase; 
-    font-size: .8em;
-    clear: left;
 }
 img[alt*="BacktoNav"]{
     border-radius: .5em;
@@ -226,7 +181,31 @@ img[alt*="BacktoNav"]{
     bottom: 5%;
     right: 5%;
 }
-
+img[alt*="next"]{
+    border-radius: 50%;
+    margin:;
+    background-color: #476BD7;
+    margin-left: 680px;
+}
+/*grid*/ 
+#grid {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+    "nav"
+    "article" 
+    "footer"; 
+}
+header {
+    grid-area: nav; 
+}
+#article {
+    grid-area: article;
+}
+footer {
+    grid-area: footer;
+} 
 /*media*/
 @media screen and (min-width: 480px) {
    
@@ -259,3 +238,29 @@ img[alt*="BacktoNav"]{
       font-weight: bold;
     }
   }
+  
+@media screen and (min-width: 940px) {
+    #grid {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-template-areas:
+        "nav"
+        "article" 
+        "footer"; 
+    }
+    header {
+        grid-area: nav; 
+    }
+    #article {
+        grid-area: article;
+    }
+    footer {
+        grid-area: footer;
+    } 
+img[alt*="BacktoNav"]{ 	
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+}

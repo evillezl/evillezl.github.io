@@ -151,7 +151,7 @@ article {
     padding: 1em;
     border: double 4px #76BED0;
     border-radius: 1em 2em;
-    margin: .5em;
+    margin: .5em 0em;
     height: auto;
     text-align: left;
     justify-content: center;
@@ -165,10 +165,16 @@ img[alt*="englishlanguage"]{
 img[alt*="spanishlanguage"]{
     border-radius: .5em;
 }
-
+img[alt*="BacktoNav"]{
+    border-radius: .5em;
+    float: left;
+    background-color: #476BD7;
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
 /*media*/
 @media screen and (min-width: 480px) {
-   
     h2 {
         color:#8C696F;
         font-size: x-large;
@@ -198,37 +204,3 @@ img[alt*="spanishlanguage"]{
       font-weight: bold;
     }
   }
-  
-  @media screen and (min-width: 940px) {
-    #grid {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: minmax(25em, 1fr) 30em;
-        grid-template-areas:
-        "nav nav"
-        "article aside"
-         "footer footer";
-      max-width: 1200px;
-      margin: 0 auto;
-      position: relative;
-    }
-    header {
-        grid-area: nav; 
-      }
-      #EES {
-        grid-area: article;
-      }
-      #skills {
-      grid-area: aside;
-      padding: 1em;
-      padding-left: 45px;
-    }
-    footer {
-        grid-area: footer;
-      } 
-      img[alt*="BacktoNav"]{ 	
-        position: fixed;
-        bottom: 5%;
-        right: 5%;
-    }
-
