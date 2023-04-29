@@ -232,54 +232,15 @@ img[alt*="BacktoNav"]{
   bottom: 5%;
   right: 5%;
 }
-
-/*media*/
-@media screen and (min-width: 480px) {
-    article p img {
-    float: left;
-    margin: 1em;
-    border-radius: 50%;
-      margin-left: 5px;
-      -webkit-shape-outside: url(../images/Personal_img/IMG_5939.png);
-      -webkit-shape-margin: 1em;
-      /*shape-margin: 1em;*/ 
-    }
-    img[src*="images/icons/ADVCERT.png"] {  
-      -webkit-shape-margin: 1em; 
-      /*shape-margin: 1em;*/
-    }
-    h2 {
-      color:#8C696F;
-      font-size: x-large;
-  }
-  h3 {
-      color: #8C696F;
-      font-size: larger;
-  }
-  header h1 {
-      font-size: xx-large;
-  }
-  nav ul li a {
-      flex: auto;
-    } 
-  }
-  
-  @media screen and (max-width: 600px) {
-    header p {
-      margin-top: 1em;
-      font-family: Georgia, serif;
-      font-style: italic;
-      font-size: 1.2em;
-    }
-    h2, h3 {
-        font-family: 'Ubuntu', sans-serif;
-    }
-    h2, h3 {
-      font-weight: bold;
-    }
-  }
-  
-
-
-
-
+/*grid*/
+#BTHP {
+  margin: .5em 1em;
+  width: 400px;
+}
+#BTHP a{
+  border: 1px solid;
+  border-radius: .5em;
+  padding: .5em 1em;
+  margin: .5em;
+  display: block;
+}
