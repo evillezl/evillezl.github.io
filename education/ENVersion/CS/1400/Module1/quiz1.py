@@ -1,1 +1,0 @@
-print( "Divide: " + str(7 / 4 ))
